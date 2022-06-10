@@ -1,10 +1,12 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Projects from "../Projects/Projects";
 // import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Contact from "../Contact"
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -23,8 +25,10 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> MUHAMMAD SAMSUDDIN</strong>
               </h1>
+
+              
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
@@ -45,6 +49,7 @@ function Home() {
       <Home2 />
 
       <Projects />
+      <Contact />
     </section>
   );
 }

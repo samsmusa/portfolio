@@ -23,11 +23,9 @@ function Type() {
     startDelay={100}
     cursorColor="red"
     multiText={[
-      'Hey there, This is a type writer animation package',
-      'it consist of two types...',
-      'Single text display and multi text display',
-      'Fonts can be customized.',
-      'The type speed can be customized as well',
+      'A designer knows he has achieved perfection ',
+      'not when there is nothing left to add',
+      ', but when there is nothing left to take away',
     ]}
     typeSpeed={100}
     multiTextLoop={true}
