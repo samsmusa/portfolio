@@ -8,6 +8,7 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import ProjectDetails from "./ProjectDetails";
 
 function Projects() {
   return (
@@ -29,6 +30,7 @@ function Projects() {
               description="Indibidual Parts manufacturer. parts sels, orders, review, and deshboard are included. Reactjs, HTML, CSS, Nodejs, and mongodb use."
               linkg="https://github.com/samsmusa/GunParts"
               linkl="https://gunparts-c9161.web.app/"
+              
             />
           </Col>
 
@@ -57,6 +59,7 @@ function Projects() {
           
         </Row>
       </Container>
+      
     </Container>
   );
 }

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { BiLinkExternal } from "react-icons/bi";
+import ProjectDetails from "./ProjectDetails";
+import { Modal } from "react-bootstrap";
 
 function ProjectCards(props) {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -21,6 +24,15 @@ function ProjectCards(props) {
           {props.isBlog ? "View Blog" : "View Project"}
         </Button>
       </Card.Body>
+      <>
+      <Button variant="primary" onClick={() => setModalShow(true)}>
+        Launch vertically centered modal
+      </Button>
+      <ProjectDetails
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+      </>
     </Card>
   );
 }
