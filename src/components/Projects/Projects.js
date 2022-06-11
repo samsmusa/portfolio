@@ -9,10 +9,13 @@ import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import ProjectDetails from "./ProjectDetails";
+import LoadData from "../LoadData";
 
 function Projects() {
+  const [data, setData] = LoadData()
+  console.log(data)
   return (
-    <Container fluid className="project-section" style={{backgroundColor:"#2d1950"}}>
+    <Container fluid className="project-section" style={{ backgroundColor: "#2d1950" }}>
       {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
@@ -22,44 +25,27 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          {data?.map(e => <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={e?.img}
               isBlog={false}
-              title="Chatify"
-              description="Indibidual Parts manufacturer. parts sels, orders, review, and deshboard are included. Reactjs, HTML, CSS, Nodejs, and mongodb use."
-              linkg="https://github.com/samsmusa/GunParts"
-              linkl="https://gunparts-c9161.web.app/"
-              
-            />
-          </Col>
+              title={e?.name}
+              point1={e?.point1}
+              point2={e?.point2}
+              point3={e?.point3}
+              point4={e?.point4}
+              point5={e?.point5}
+              linkg={e?.github}
+              linkl={e?.live}
+              tech={e?.tech}
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="ScholarUni"
-              description="Site for scholarship and internship information for international students.html, css, javascript, django and mysql are use."
-              linkg="https://github.com/samsmusa/django_site"
-              linkl="https://Scholaruni.com"
             />
-          </Col>
+          </Col>)}
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Food Inventory"
-              description="Inventory site for Food. whare vendor and user both have different kind of dashboard. Create update and delete product from dashbord.Reactjs, html, css , nodejs and mongodb use."
-              linkg="https://github.com/samsmusa/NaturalFoodInventoryClient"
-              linkl="https://natural-food-inventory.web.app/"
-            />
-          </Col>
 
-          
         </Row>
       </Container>
-      
+
     </Container>
   );
 }

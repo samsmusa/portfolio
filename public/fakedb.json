@@ -6,7 +6,16 @@
     "point3": "Indibidual Parts manufacturer. parts sels, orders, review, and deshboard are included. Reactjs, HTML, CSS, Nodejs, and mongodb use.",
     "point4": "Indibidual Parts manufacturer. parts sels, orders, review, and deshboard are included. Reactjs, HTML, CSS, Nodejs, and mongodb use.",
     "point5": "Indibidual Parts manufacturer. parts sels, orders, review, and deshboard are included. Reactjs, HTML, CSS, Nodejs, and mongodb use.",
-    "img": "https:dfkjdf.com",
+    "img_data": [
+      {
+        "alt":"scholaruni image 1",
+        "img":"https://images.unsplash.com/photo-1654923064926-be7e64267a31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      },
+      {
+        "alt":"scholaruni image 2",
+        "img":"https://images.unsplash.com/photo-1648912607168-88b8db633771?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+      }
+    ],
     "live":"https://gunparts-c9161.web.app/",
     "github":"https://github.com/samsmusa/GunParts",
     "tech": [
@@ -43,7 +52,16 @@
     "point3": "Indibidual Parts manufacturer. parts sels, orders, review, and deshboard are included. Reactjs, HTML, CSS, Nodejs, and mongodb use.",
     "point4": "Indibidual Parts manufacturer. parts sels, orders, review, and deshboard are included. Reactjs, HTML, CSS, Nodejs, and mongodb use.",
     "point5": "Indibidual Parts manufacturer. parts sels, orders, review, and deshboard are included. Reactjs, HTML, CSS, Nodejs, and mongodb use.",
-    "img": "https:dfkjdf.com",
+    "img_data": [
+      {
+        "alt":"scholaruni image 1",
+        "img":"https://images.unsplash.com/photo-1654923064926-be7e64267a31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      },
+      {
+        "alt":"scholaruni image 2",
+        "img":"https://images.unsplash.com/photo-1648912607168-88b8db633771?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+      }
+    ],
     "live":"https://gunparts-c9161.web.app/",
     "github":"https://github.com/samsmusa/GunParts",
     "tech": [
@@ -80,7 +98,16 @@
     "point3": "Indibidual Parts manufacturer. parts sels, orders, review, and deshboard are included. Reactjs, HTML, CSS, Nodejs, and mongodb use.",
     "point4": "Indibidual Parts manufacturer. parts sels, orders, review, and deshboard are included. Reactjs, HTML, CSS, Nodejs, and mongodb use.",
     "point5": "Indibidual Parts manufacturer. parts sels, orders, review, and deshboard are included. Reactjs, HTML, CSS, Nodejs, and mongodb use.",
-    "img": "https:dfkjdf.com",
+    "img_data": [
+      {
+        "alt":"scholaruni image 1",
+        "img":"https://images.unsplash.com/photo-1654923064926-be7e64267a31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      },
+      {
+        "alt":"scholaruni image 2",
+        "img":"https://images.unsplash.com/photo-1648912607168-88b8db633771?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+      }
+    ],
     "live":"https://gunparts-c9161.web.app/",
     "github":"https://github.com/samsmusa/GunParts",
     "tech": [

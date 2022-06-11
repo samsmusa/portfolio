@@ -5,6 +5,7 @@ import Technologies from './Technologies';
 
 const ProjectDetails = (props) => {
   const [details, setDetails] = useState(true)
+  
   return (
     <Modal
       {...props}
@@ -15,11 +16,11 @@ const ProjectDetails = (props) => {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          <p className='fs-6'><span onClick={()=>setDetails(true)} className='mx-2' style={{cursor:'pointer'}}>project details</span> <span onClick={()=>setDetails(false)} style={{cursor:'pointer'}} className='mx-2'>project Tech</span></p>
+          <p className='fs-6'><span onClick={()=>setDetails(true)} className='mx-1 p-1 btn btn-sm btn-primary' style={{cursor:'pointer'}}>PROJECT DETAILS</span> <span onClick={()=>setDetails(false)} style={{cursor:'pointer'}} className='mx-1 p-1 btn btn-sm btn-primary'>PROJECT TECH</span></p>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        {details ? <Details /> : <Technologies />}
+        {details ? <Details data={props?.data}  /> : <Technologies data={props?.data} />}
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
