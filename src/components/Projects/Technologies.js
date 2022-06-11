@@ -5,7 +5,6 @@ import imag from "../../Assets/Projects/chatify.png";
 import CarouselSlide from './CarouselSlide';
 
 const Technologies = ({ data }) => {
-  console.log(data)
   function Technologies_name(arr) {
     let tech = '';
     arr.forEach(e => {
@@ -25,7 +24,7 @@ const Technologies = ({ data }) => {
             <ListGroup.Item>
               <div>
                 <p className='m-0 p-0 ' style={{ fontSize: "10px", color: "dimgray" }}>Project Name</p>
-                <p className="m-0 pt-1">{data?.title}</p>
+                <p className="m-0 pt-1">{data?.name}</p>
               </div>
             </ListGroup.Item>
             <ListGroup.Item>

@@ -4,7 +4,7 @@ import imag from "../../Assets/Projects/chatify.png";
 import CarouselSlide from './CarouselSlide';
 
 function Details ({data}) {
-  // console.log(data)
+  console.log(data)
   return (
     <Container>
       <Row>
@@ -16,19 +16,19 @@ function Details ({data}) {
             <ListGroup.Item>
               <div>
                 <p className='m-0 p-0 ' style={{ fontSize: "10px", color: "dimgray" }}>Project Name</p>
-                <p className="m-0 pt-1">{data?.title}</p>
+                <p className="m-0 pt-1">{data?.name}</p>
               </div>
             </ListGroup.Item>
             <ListGroup.Item>
               <div>
                 <p className='m-0 p-0 ' style={{ fontSize: "10px", color: "dimgray" }}>Github Url</p>
-                <p className="m-0 pt-1">{data?.linkg}</p>
+                <p className="m-0 pt-1">{data?.github}</p>
               </div>
             </ListGroup.Item>
             <ListGroup.Item>
               <div>
                 <p className='m-0 p-0 ' style={{ fontSize: "10px", color: "dimgray" }}>Live Url</p>
-                <p className="m-0 pt-1">{data?.linkl}</p>
+                <p className="m-0 pt-1">{data?.live}</p>
               </div>
             </ListGroup.Item>
           </ListGroup>

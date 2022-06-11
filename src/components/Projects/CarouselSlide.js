@@ -6,8 +6,8 @@ function CarouselSlide({images}) {
       {images?.map(e=><Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
+          src={e?.img}
+          alt={e?.alt}
         />
       </Carousel.Item>)}
       

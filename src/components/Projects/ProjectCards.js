@@ -5,36 +5,37 @@ import { BiLinkExternal } from "react-icons/bi";
 import ProjectDetails from "./ProjectDetails";
 import { Modal } from "react-bootstrap";
 
-function ProjectCards(props) {
+function ProjectCards({data, isBlog}) {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props?.imgPath} alt="card-img" />
+      <Card.Img variant="top" src={data?.img_data[0].img} alt="card-img" />
       <Card.Body>
-        <Card.Title>{props?.title}</Card.Title>
+        <Card.Title>{data?.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           <ul>
-            <li>{props?.point1}</li>
-            <li>{props?.point2}</li>
+            <li>{data?.point1}</li>
+            <li>{data?.point2}</li>
           </ul>
         </Card.Text>
-        <Button className="my-2" variant="primary" href={props?.linkg} target="_blank">
+        <Button className="my-2" variant="primary" href={data?.linkg} target="_blank">
           <BiLinkExternal /> &nbsp;
-          {props?.isBlog ? "Blog(Github)" : "Project(Github)"}
+          {data?.isBlog ? "Blog(Github)" : "Project(Github)"}
         </Button> <br />
-        <Button className="my-2" variant="primary" href={props?.linkl} target="_blank">
+        <Button className="my-2" variant="primary" href={data?.linkl} target="_blank">
           <BiLinkExternal /> &nbsp;
-          {props?.isBlog ? "View Blog" : "View Project"}
+          {isBlog ? "View Blog" : "View Project"}
         </Button>
       </Card.Body>
       <>
       <Button variant="primary" onClick={() => setModalShow(true)}>
-        Launch vertically centered modal
+      <BiLinkExternal /> &nbsp;
+      View Details
       </Button>
       <ProjectDetails
         show={modalShow}
         onHide={() => setModalShow(false)}
-        data={props}
+        data={data}
       />
       </>
     </Card>

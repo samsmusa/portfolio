@@ -27,18 +27,8 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {data?.map(e => <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={e?.img}
               isBlog={false}
-              title={e?.name}
-              point1={e?.point1}
-              point2={e?.point2}
-              point3={e?.point3}
-              point4={e?.point4}
-              point5={e?.point5}
-              linkg={e?.github}
-              linkl={e?.live}
-              tech={e?.tech}
-
+              data={e}
             />
           </Col>)}
 
