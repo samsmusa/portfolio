@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, ListGroup, Row } from 'react-bootstrap';
-import imag from "../../Assets/Projects/chatify.png";
 import CarouselSlide from './CarouselSlide';
 
 function Details ({data}) {

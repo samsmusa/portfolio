@@ -3,7 +3,6 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { BiLinkExternal } from "react-icons/bi";
 import ProjectDetails from "./ProjectDetails";
-import { Modal } from "react-bootstrap";
 
 function ProjectCards({data, isBlog}) {
   const [modalShow, setModalShow] = React.useState(false);
