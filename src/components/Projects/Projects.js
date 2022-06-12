@@ -7,7 +7,7 @@ function Projects() {
   const [data, setData] = LoadData()
   console.log(data)
   return (
-    <Container fluid className="project-section" style={{ backgroundColor: "#2d1950" }}>
+    <Container id="project" fluid className="project-section" style={{ backgroundColor: "#2d1950" }}>
       {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">

@@ -12,6 +12,7 @@ const ProjectDetails = (props) => {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      
 
     >
       <Modal.Header closeButton>
@@ -19,7 +20,7 @@ const ProjectDetails = (props) => {
           <p className='fs-6'><span onClick={()=>setDetails(true)} className='mx-1 p-1 btn btn-sm btn-primary' style={{cursor:'pointer'}}>PROJECT DETAILS</span> <span onClick={()=>setDetails(false)} style={{cursor:'pointer'}} className='mx-1 p-1 btn btn-sm btn-primary'>PROJECT TECH</span></p>
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body >
         {details ? <Details data={props?.data}  /> : <Technologies data={props?.data} />}
       </Modal.Body>
       <Modal.Footer>

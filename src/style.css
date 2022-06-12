@@ -270,6 +270,12 @@ button:focus {
   text-align: left;
 }
 
+.modal-content {
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;

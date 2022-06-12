@@ -12,7 +12,8 @@ import { Link } from "react-router-dom";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about" style={{ backgroundColor: "#2d1950" }}>
+    <div id="about">
+    <Container fluid className="home-about-section"  style={{ backgroundColor: "#2d1950" }}>
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
@@ -106,6 +107,7 @@ function Home2() {
         </Row>
       </Container>
     </Container>
+    </div>
   );
 }
 export default Home2;
